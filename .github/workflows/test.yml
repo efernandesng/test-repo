@@ -9,6 +9,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Use secret
-              run: echo "sdsdsdsd"
+              run: echo "sdsdsdsd2"
               env:
                 TOKEN: ${{ secrets.IMPORTANT }}
