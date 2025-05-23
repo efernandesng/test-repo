@@ -1,0 +1,13 @@
+name: Test Access Secrets
+
+on:
+    pull_request:
+
+jobs:
+    first:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Use secret
+              run: echo "sdsdsdsd"
+              env:
+                TOKEN: ${{ secrets.IMPORTANT }}
